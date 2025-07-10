@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle Time - Guru Purnima</title>
+  <link rel="stylesheet" href="page2.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Now test time lah sir! 😄</h1>
+    <p class="subtitle">Let's see how well you know Guru Purnima</p>
+
+    <div class="puzzle" id="puzzle1">
+      <h2>🧠 Puzzle 1:</h2>
+      <p>Who is considered the first Guru in Hindu tradition?</p>
+      <ul>
+        <li onclick="checkAnswer(this, false)">a) Vyas</li>
+        <li onclick="checkAnswer(this, false)">b) Brahma</li>
+        <li onclick="checkAnswer(this, true)">c) Shiva</li>
+        <li onclick="checkAnswer(this, false)">d) Vishnu</li>
+      </ul>
+    </div>
+
+    <div class="puzzle" id="puzzle2">
+      <h2>🌕 Puzzle 2:</h2>
+      <p>When is Guru Purnima celebrated?</p>
+      <ul>
+        <li onclick="checkAnswer(this, true)">a) Full Moon (Purnima)</li>
+        <li onclick="checkAnswer(this, false)">b) New Moon (Amavasya)</li>
+        <li onclick="checkAnswer(this, false)">c) Ekadashi</li>
+        <li onclick="checkAnswer(this, false)">d) Holi</li>
+      </ul>
+    </div>
+
+    <div class="puzzle" id="puzzle3">
+      <h2>📜 Puzzle 3:</h2>
+      <p>Complete the Guru mantra:</p>
+      <p class="mantra">
+        "Guru Brahma, Guru Vishnu, Guru Devo ____"
+      </p>
+      <ul>
+        <li onclick="checkAnswer(this, true)">a) Maheshwara</li>
+        <li onclick="checkAnswer(this, false)">b) Shankara</li>
+        <li onclick="checkAnswer(this, false)">c) Ganesha</li>
+        <li onclick="checkAnswer(this, false)">d) Krishna</li>
+      </ul>
+    </div>
+
+    <button class="next-btn" onclick="goToThankYou()">Last one lah… Click and feel our love 🥹👉</button>
+  </div>
+
+  <script src="page2.js"></script>
+</body>
+</html>

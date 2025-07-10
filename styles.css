@@ -1,0 +1,98 @@
+/* Reset and background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  height: 100vh;
+}
+
+/* Headline */
+.headline {
+  font-size: 2em;
+  color: #b14d00;
+  margin-bottom: 40px;
+}
+
+/* Gift Box */
+.gift-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  animation: wiggle 2s infinite;
+}
+
+.lid, .box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.lid {
+  background-color: #ff4c4c;
+  z-index: 2;
+  transition: all 1s ease;
+}
+
+.ribbon {
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  transition: opacity 0.5s;
+}
+
+.box {
+  background-color: #ff6f61;
+  z-index: 1;
+}
+
+/* Message */
+.message {
+  font-size: 2em;
+  margin-top: 30px;
+  color: #ff0077;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s ease-in-out;
+}
+
+/* Button */
+.next-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffc107;
+  color: #000;
+  padding: 15px 20px;
+  border: none;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Animations */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #ffc107; }
+  100% { box-shadow: 0 0 20px #ff5722; }
+}

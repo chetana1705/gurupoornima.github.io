@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top right, #fdf6e3, #ffecd2);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h1 {
+  color: #b14d00;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.puzzle {
+  background: #fff4e6;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 190, 123, 0.4);
+  transition: 0.3s;
+}
+
+.puzzle:hover {
+  transform: scale(1.02);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffe6cc;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #ffcc99;
+}
+
+li.correct {
+  background-color: #a3e635;
+  color: #000;
+  font-weight: bold;
+}
+
+li.wrong {
+  background-color: #f87171;
+  color: #fff;
+}
+
+.mantra {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.next-btn {
+  margin-top: 40px;
+  padding: 15px 25px;
+  background-color: #ffc107;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #ffc107; }
+  100% { box-shadow: 0 0 20px #ff5722; }
+}

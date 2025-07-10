@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to top, #fff7f0, #ffecd2);
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  position: relative;
+}
+
+.scroll {
+  background: #fffbe7;
+  padding: 30px;
+  border: 4px double #e0ac69;
+  max-width: 700px;
+  margin: 30px auto;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255, 200, 100, 0.4);
+  animation: slideUp 1.5s ease-out;
+}
+
+.scroll h1 {
+  color: #b14d00;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.scroll p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin: 15px 0;
+  color: #444;
+}
+
+.emoji {
+  font-size: 3em;
+  animation: pulse 2s infinite;
+}
+
+.animated-namaste {
+  font-size: 4em;
+  margin-top: 30px;
+  animation: namasteWave 2s infinite;
+}
+
+/* Falling flower animation */
+body::before {
+  content: '🌸 🌼 🌸 🌺 🌼 🌸 🌻';
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  animation: flowerFall 10s linear infinite;
+  top: -10%;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes flowerFall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(120vh); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes namasteWave {
+  0%, 100% { transform: rotate(0); }
+  50% { transform: rotate(10deg); }
+}
